@@ -1,0 +1,60 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Registry Visual Effects Settings",
+    "description": "A collection of Windows visual effect settings stored in the Registry",
+    "type": "object",
+    "required": ["$schema", "List"],
+    "properties": {
+      "$schema": {
+        "type": "string",
+        "description": "Reference to the schema definition file"
+      },
+      "List": {
+        "type": "array",
+        "description": "Collection of visual effects settings stored in the Registry",
+        "items": {
+          "type": "object",
+          "required": ["Name", "Description", "Key", "Value", "Type"],
+          "properties": {
+            "Name": {
+              "type": "string",
+              "description": "The name of the visual effect setting"
+            },
+            "Description": {
+              "type": "string",
+              "description": "Brief description of what the visual effect does"
+            },
+            "Key": {
+              "type": "string",
+              "description": "Registry key path where the setting is stored",
+              "pattern": "^HKCU:\\\\.*"
+            },
+            "Value": {
+              "type": "string",
+              "description": "Registry value name"
+            },
+            "Type": {
+              "type": "string",
+              "description": "The implementation type for the visual effect",
+              "enum": ["VisualEffectRegistry"]
+            },
+            "DataOff": {
+              "type": "integer",
+              "description": "Value when the effect is turned off"
+            },
+            "DataOn": {
+              "type": "integer",
+              "description": "Value when the effect is turned on"
+            },
+            "Broadcast": {
+              "type": "string",
+              "description": "Broadcast message type to send after changing this setting"
+            }
+          },
+          "additionalProperties": false
+        },
+        "minItems": 1
+      }
+    },
+    "additionalProperties": false
+  }

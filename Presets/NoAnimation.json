@@ -1,0 +1,75 @@
+{
+    "$schema": "Schema/Presets-Schema.json",
+    "Name": "NoAnimation",
+    "Description": "Enable default visual effects without animation",
+    "Settings": [
+        {
+            "Name": "Animation",
+            "Enabled": false
+        },
+        {
+            "Name": "ClientAreaAnimation",
+            "Enabled": false
+        },
+        {
+            "Name": "ComboBoxAnimation",
+            "Enabled": false
+        },
+        {
+            "Name": "CursorShadow",
+            "Enabled": false
+        },
+        {
+            "Name": "DragFullWindows",
+            "Enabled": true
+        },
+        {
+            "Name": "DropShadow",
+            "Enabled": true
+        },
+        {
+            "Name": "EnableAeroPeek",
+            "Enabled": true
+        },
+        {
+            "Name": "FontSmoothing",
+            "Enabled": true
+        },
+        {
+            "Name": "IconShadow",
+            "Enabled": true
+        },
+        {
+            "Name": "ListBoxSmoothScrolling",
+            "Enabled": false
+        },
+        {
+            "Name": "MenuAnimation",
+            "Enabled": false
+        },
+        {
+            "Name": "SelectionFade",
+            "Enabled": false
+        },
+        {
+            "Name": "ShowThumbnails",
+            "Enabled": true
+        },
+        {
+            "Name": "TaskbarAnimations",
+            "Enabled": true
+        },
+        {
+            "Name": "TaskbarThumbnailCache",
+            "Enabled": true
+        },
+        {
+            "Name": "ToolTipAnimation",
+            "Enabled": false
+        },
+        {
+            "Name": "TranslucentSelect",
+            "Enabled": true
+        }
+    ]
+}

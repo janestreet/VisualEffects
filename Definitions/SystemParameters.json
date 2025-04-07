@@ -1,0 +1,82 @@
+{
+    "$schema": "Schema/SystemParameters-Schema.json",
+    "List": [
+        {
+            "Name": "ClientAreaAnimation",
+            "Description": "Animate controls and elements inside windows",
+            "SpiGet": "0x1042",
+            "SpiSet": "0x1043",
+            "Type": "VisualEffectSPI"
+        },
+        {
+            "Name": "Animation",
+            "Description": "Animate windows when minimizing and maximizing",
+            "SpiGet": "0x0048",
+            "SpiSet": "0x0049",
+            "Type": "VisualEffectSPIAnimation"
+        },
+        {
+            "Name": "MenuAnimation",
+            "Description": "Fade or slide menus into view",
+            "SpiGet": "0x1002",
+            "SpiSet": "0x1003",
+            "Type": "VisualEffectSPI"
+        },
+        {
+            "Name": "ToolTipAnimation",
+            "Description": "Fade or slide ToolTips into view",
+            "SpiGet": "0x1016",
+            "SpiSet": "0x1017",
+            "Type": "VisualEffectSPI"
+        },
+        {
+            "Name": "SelectionFade",
+            "Description": "Fade out menu items after clicking",
+            "SpiGet": "0x1014",
+            "SpiSet": "0x1015",
+            "Type": "VisualEffectSPI"
+        },
+        {
+            "Name": "CursorShadow",
+            "Description": "Show shadows under mouse pointer",
+            "SpiGet": "0x101A",
+            "SpiSet": "0x101B",
+            "Type": "VisualEffectSPI"
+        },
+        {
+            "Name": "DropShadow",
+            "Description": "Show shadows under windows",
+            "SpiGet": "0x1024",
+            "SpiSet": "0x1025",
+            "Type": "VisualEffectSPI"
+        },
+        {
+            "Name": "DragFullWindows",
+            "Description": "Show window contents while dragging",
+            "SpiGet": "0x0026",
+            "SpiSet": "0x0025",
+            "Type": "VisualEffectSPIAltParam"
+        },
+        {
+            "Name": "ComboBoxAnimation",
+            "Description": "Slide open combo boxes",
+            "SpiGet": "0x1004",
+            "SpiSet": "0x1005",
+            "Type": "VisualEffectSPI"
+        },
+        {
+            "Name": "FontSmoothing",
+            "Description": "Smooth edges of screen fonts",
+            "SpiGet": "0x004A",
+            "SpiSet": "0x004B",
+            "Type": "VisualEffectSPIAltParam"
+        },
+        {
+            "Name": "ListBoxSmoothScrolling",
+            "Description": "Smooth-scroll list boxes",
+            "SpiGet": "0x1006",
+            "SpiSet": "0x1007",
+            "Type": "VisualEffectSPI"
+        }
+    ]
+}

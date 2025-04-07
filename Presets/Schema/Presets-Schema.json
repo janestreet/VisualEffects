@@ -1,0 +1,42 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Visual Effects Preset",
+    "description": "A preset configuration for Windows visual effects settings",
+    "type": "object",
+    "required": [ "$schema", "Name", "Description", "Settings" ],
+    "properties": {
+        "$schema": {
+            "type": "string",
+            "description": "Reference to the schema definition file"
+        },
+        "Name": {
+            "type": "string",
+            "description": "The name of the preset configuration"
+        },
+        "Description": {
+            "type": "string",
+            "description": "Description of what this preset configures"
+        },
+        "Settings": {
+            "type": "array",
+            "description": "List of visual effect settings and their enabled states",
+            "items": {
+                "type": "object",
+                "required": [ "Name", "Enabled" ],
+                "properties": {
+                    "Name": {
+                        "type": "string",
+                        "description": "The name of the visual effect setting"
+                    },
+                    "Enabled": {
+                        "type": "boolean",
+                        "description": "Whether the visual effect is enabled or disabled"
+                    }
+                },
+                "additionalProperties": false
+            },
+            "minItems": 1
+        }
+    },
+    "additionalProperties": false
+}

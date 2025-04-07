@@ -1,0 +1,51 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Visual Effects Settings",
+    "description": "A collection of Windows visual effect settings with their SPI values",
+    "type": "object",
+    "required": ["$schema", "List"],
+    "properties": {
+        "$schema": {
+            "type": "string",
+            "description": "Reference to the schema definition file"
+        },
+        "List": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [ "Name", "Description", "SpiGet", "SpiSet", "Type" ],
+                "properties": {
+                    "Name": {
+                        "type": "string",
+                        "description": "The name of the visual effect setting"
+                    },
+                    "Description": {
+                        "type": "string",
+                        "description": "Brief description of what the visual effect does"
+                    },
+                    "SpiGet": {
+                        "type": "string",
+                        "description": "Hexadecimal code for retrieving the setting value",
+                        "pattern": "^0x[0-9A-Fa-f]{4}$"
+                    },
+                    "SpiSet": {
+                        "type": "string",
+                        "description": "Hexadecimal code for setting the value",
+                        "pattern": "^0x[0-9A-Fa-f]{4}$"
+                    },
+                    "Type": {
+                        "type": "string",
+                        "description": "The implementation type for the visual effect",
+                        "enum": [
+                            "VisualEffectSPI",
+                            "VisualEffectSPIAnimation",
+                            "VisualEffectSPIAltParam"
+                        ]
+                    }
+                },
+                "additionalProperties": false
+            },
+            "minItems": 1
+        }
+    }
+}

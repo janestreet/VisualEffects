@@ -1,0 +1,50 @@
+{
+    "$schema": "Schema/Registry-Schema.json",
+    "List": [
+        {
+            "Name": "TaskbarAnimations",
+            "Description": "Animations in the taskbar",
+            "Key": "HKCU:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
+            "Value": "TaskbarAnimations",
+            "Type": "VisualEffectRegistry"
+        },
+        {
+            "Name": "EnableAeroPeek",
+            "Description": "Enable Peek",
+            "Key": "HKCU:\\SOFTWARE\\Microsoft\\Windows\\DWM",
+            "Value": "EnableAeroPeek",
+            "Type": "VisualEffectRegistry"
+        },
+        {
+            "Name": "TaskbarThumbnailCache",
+            "Description": "Save taskbar thumbnail previews",
+            "Key": "HKCU:\\SOFTWARE\\Microsoft\\Windows\\DWM",
+            "Value": "AlwaysHibernateThumbnails",
+            "Type": "VisualEffectRegistry"
+        },
+        {
+            "Name": "ShowThumbnails",
+            "Description": "Show thumbnails instead of icons",
+            "Key": "HKCU:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
+            "Value": "IconsOnly",
+            "DataOff": 1,
+            "DataOn": 0,
+            "Broadcast": "ShellState",
+            "Type": "VisualEffectRegistry"
+        },
+        {
+            "Name": "TranslucentSelect",
+            "Description": "Show translucent selection rectangle",
+            "Key": "HKCU:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
+            "Value": "ListviewAlphaSelect",
+            "Type": "VisualEffectRegistry"
+        },
+        {
+            "Name": "IconShadow",
+            "Description": "Use drop shadows for icon labels on the desktop",
+            "Key": "HKCU:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
+            "Value": "ListviewShadow",
+            "Type": "VisualEffectRegistry"
+        }
+    ]
+}
