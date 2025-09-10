@@ -2,6 +2,7 @@ VisualEffects is a PowerShell module to manage Windows Visual Effects which norm
 
 ![VisualEffects dialog](Documentation/VisualEffects.png)
 
+This module was presented in [Classes and Broadcasts: Building a PowerShell Module for Instant Visual Settings](https://www.youtube.com/watch?v=imOUyse3v1c) talk at PowerShell + DevOps Global Summit 2025
 
 # Available commands
 | Command                | Synopsis                                                 |
